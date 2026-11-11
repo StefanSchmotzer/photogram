@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "photogram": {
+    "angular-insta-course-0726": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -31,15 +31,7 @@
             ],
             "styles": [
               "src/styles.scss"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "security": {
-              "allowedHosts": []
-            },
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
           },
           "configurations": {
             "production": {
@@ -69,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "photogram:build:production"
+              "buildTarget": "angular-insta-course-0726:build:production"
             },
             "development": {
-              "buildTarget": "photogram:build:development"
+              "buildTarget": "angular-insta-course-0726:build:development"
             }
           },
           "defaultConfiguration": "development"
