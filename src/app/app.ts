@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { MainPage } from './main-page/main-page';
 
 @Component({
@@ -8,5 +8,5 @@ import { MainPage } from './main-page/main-page';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('photogram');
+
 }

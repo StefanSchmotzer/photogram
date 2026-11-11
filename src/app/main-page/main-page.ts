@@ -11,17 +11,17 @@ export class MainPage {
   posts: Post[] = [
     {
       name: "Banana",
-      img: "photogram/public/img/img/banana.jpg",
+      img: "images/banana.jpg",
       likes: 3,
     },
     {
       name: "Currant",
-      img: "photogram/public/img/img/currant.jpg",
+      img: "images/currant.jpg",
       likes: 1,
     },
     {
       name: "Orange",
-      img: "photogram/public/img/img/orange.jpg",
+      img: "images/orange.jpg",
       likes: 3,
     }
   ]
