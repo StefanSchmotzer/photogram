@@ -5,12 +5,12 @@
     <h2>{{ post.name }}</h2>
     <img [src]="post.img" [alt]="post.name + ' Image'">
     <div class="like-row">
-        <p>{{ post.likes }} Likes</p>
         @if (post.isLiked) {
         <img class="icons" src="/images/icons/heart-red.png" alt="liked-Icon" (click)="toggleLike(post)">
         } @else {
         <img class="icons" src="/images/icons/heart-black.png" alt="liked-Icon" (click)="toggleLike(post)">
         }
+        <p>{{ post.likes }} Likes</p>
     </div>
 
 </article>

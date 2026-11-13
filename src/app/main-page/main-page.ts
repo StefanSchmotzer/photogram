@@ -13,14 +13,14 @@ export class MainPage {
     {
       name: "Banana",
       img: "images/banana.jpg",
-      likes: 3,
-      isLiked: true,
+      likes: 4,
+      isLiked: false,
     },
     {
       name: "Currant",
       img: "images/currant.jpg",
-      likes: 1,
-      isLiked: false,
+      likes: 10,
+      isLiked: true,
     },
     {
       name: "Orange",
