@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { Post } from '../interfaces/post';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [],
+  imports: [RouterLink],
   selector: 'app-main-page',
   styleUrl: './main-page.scss',
   templateUrl: './main-page.html',
