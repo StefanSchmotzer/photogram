@@ -1,0 +1,12 @@
+<article>
+    <h2>{{ postInput().name }}</h2>
+    <img [src]="postInput().img" [alt]="postInput().name + ' Image'">
+    <button class="like-row">
+        @if (postInput().isLiked) {
+        <img class="icons" src="/images/icons/heart-red.png" alt="liked-Icon" (click)="toggleLike(postInput())">
+        } @else {
+        <img class="icons" src="/images/icons/heart-black.png" alt="liked-Icon" (click)="toggleLike(postInput())">
+        }
+    </button>
+        <p>{{ postInput().likes }} Likes</p>
+</article>

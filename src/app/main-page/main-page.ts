@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Post } from '../interfaces/post';
 import { RouterLink } from '@angular/router';
+import { SinglePost } from './single-post/single-post';
 
 @Component({
-  imports: [RouterLink],
+  imports: [RouterLink, SinglePost],
   selector: 'app-main-page',
   styleUrl: './main-page.scss',
   templateUrl: './main-page.html',
@@ -25,17 +26,8 @@ export class MainPage {
     {
       name: "Orange",
       img: "images/orange.jpg",
-      likes: 3,
-      isLiked: false,
+      likes: 7,
+      isLiked: true,
     }
   ]
-  toggleLike(post: Post) {
-    post.isLiked = !post.isLiked;
-
-    if (post.isLiked) {
-      post.likes++;
-    } else {
-      post.likes--;
-    }
-  }
 }

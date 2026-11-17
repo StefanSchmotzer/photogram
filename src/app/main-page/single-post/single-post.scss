@@ -1,0 +1,21 @@
+img {
+    width: 600px;
+    height: auto;
+}
+
+.like-row {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    height: 30px;
+    width: 30px;
+    filter: drop-shadow(2px 2px 5px rgba(158, 29, 29, 0.671));
+}
+
+.icons:hover {
+    scale: 1.2;
+    cursor: grab;
+    filter: drop-shadow(-2px -2px 8px rgb(74, 255, 68))
+}
