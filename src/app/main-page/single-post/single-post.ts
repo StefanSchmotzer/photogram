@@ -1,5 +1,5 @@
-import { Component,input, signal } from '@angular/core';
-import { Post } from '../../interfaces/post';
+import { Component,input, output, signal } from '@angular/core';
+import { Post, PostComment } from '../../interfaces/post';
 import { form, FormField } from '@angular/forms/signals';
 
 @Component({
@@ -10,12 +10,20 @@ import { form, FormField } from '@angular/forms/signals';
 })
 export class SinglePost {
   postInput = input.required<Post>();
+  commentAdded = output<PostComment>();
 
   commentInput =form(signal(''));
 
   addComment() {
-    const comment = this.commentInput().value();
-    console.log(comment);
+    const text = this.commentInput().value().trim();
+
+    if (!text) return;
+
+    this.commentAdded.emit({
+      name: 'Du',
+      text,
+    });
+
     this.commentInput().value.set('');
   }
 

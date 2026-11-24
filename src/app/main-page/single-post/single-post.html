@@ -11,6 +11,11 @@
         <p>{{ postInput().likes }} Likes</p>
         
     <h3>Comments:</h3>
+    <div class="comments">
+  @for (comment of postInput().comments; track $index) {
+    <p><strong>{{ comment.name }}:</strong> {{ comment.text }}</p>
+  }
+</div>
     <input [formField]="commentInput" />
     <button type="button" (click)="addComment()" [disabled]="!commentInput().value()">Send
     </button>

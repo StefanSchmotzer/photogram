@@ -1,5 +1,6 @@
 @for (post of posts; track $index) {
-<app-single-post [postInput]="post"></app-single-post> 
+<app-single-post [postInput]="post"
+(commentAdded)="addComment(post,$event)"></app-single-post> 
 }
 <footer>
     <a routerLink="contact">Contact</a>
